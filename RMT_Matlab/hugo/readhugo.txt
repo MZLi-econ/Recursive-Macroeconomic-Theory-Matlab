@@ -1,0 +1,72 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Description of programs for Hopenhayn-Nicolini's optimal unemployment 
+insurance model:
+
+hugo.m: the main program which calculates the replacement ratio for 
+        unemployment scheme without wage tax
+
+valhugo.m: the function file defining the value function of planner
+
+Note: A small function file named hugofoc1.m will be written when main
+      program is executed.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+hugo.m
+======
+
+Output:
+
+a table of replacement ratios for three different initial promised values
+
+(Note: We do not know the exact initial promised value which produces column
+       4 of Table 1 in the paper. The second initial value given by us, 16942,
+       produces quite similar result as column 4.)
+
+
+Procedure:
+
+Part 1: Iterate to get vuaut(autarky Vu) and determine r given the calibration
+        restriction p(aaut) = 0.1, where aaut is the optimal search effort under
+        autarky.
+
+        Iteration algorithm: 1. Initialize vuaut;
+                             
+                             2. Given P(aaut)=0.1, we can express aaut as a function
+                                of r. Given vuaut, we can write first order condition
+                                of autarky problem as a function of r;
+                             
+                             3. Use fsolve to get optimal r;
+                             
+                             4. Given r in step 3, calculate optimal search effort and
+                                use it to update vuaut;
+                             
+                             5. Iterate until convergence. The final result satisfies
+                                p(aaut) = 0.1,
+
+Part 2: Parameterize vmax and vmin and construct chebyshev polynomials. Note that vmax
+        ~= Ve to guarantee convergence of coefficients.(as pointed out by Eva)
+
+Part 3: 1. Initialize Chebyshev coefficients,  
+        
+        2. Approximate value function with initial coefficients. I substitute away both 
+           consumption and search effort, so future state variable(promised value) is 
+           our control variable( the same case as capital);
+        
+        3. Given value function, use fmin to get vuprime, next period promised value. 
+           Evaluate valhugo.m at optimal vuprime to get value function;
+        
+        4. Regress value function Cv on Chebyshev polynomials to update coefficients;
+        
+        5. Iterate till coefficients converge.  
+
+Part 4: Replicate column 4 of Table 1.
+
+%----------------------------------------------------------------------------------------------
+
+valhugo.m
+=========
+
+The only thing to note is cinv, which equals max(0,inverse of utility function), a point
+made by Eva.        

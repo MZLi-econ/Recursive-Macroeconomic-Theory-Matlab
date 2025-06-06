@@ -1,0 +1,1 @@
+function V=doublej(a1,b1);alpha0=a1;gamma0=b1;diff=5;ijk=1;while diff > 1e-10  alpha1=alpha0 * alpha0;  gamma1=gamma0+alpha0 * gamma0 * alpha0';  diff=max(max(abs(gamma1 - gamma0)));  gamma0=gamma1;  alpha0=alpha1;  ijk=ijk+1;     if ijk > 50  disp('Error!!!')  endendV=gamma1;

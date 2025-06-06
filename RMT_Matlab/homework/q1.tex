@@ -1,0 +1,83 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  Macro2.tex
+%  Exam June 1999
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\magnification=1200   
+\input psfilars
+\input plain
+\input vertex
+\input ppt.sty
+
+\document
+\noindent
+{\bf Analytical Question 1} (25p)
+\vskip.1cm
+\noindent
+At the beginning of each period, a worker can choose to work at her last
+period's wage or draw a new wage. If she draws a new wage, the old wage is
+lost and she can start working at the new wage in the following period.
+New wages are i.i.d.\ draws from the c.d.f.\ $F$, where $F(0)=0$, $F(M)=1$
+for $M<\infty$. The income of an unemployed worker is $b$, which includes
+unemployment insurance and the value of home production. 
+A worker seeks to maximize 
+$
+E_0 \sum_{t=0}^{\infty} (1-\mu)^t \beta^t I_t
+$,
+where $\mu$ is the probability that a worker dies at the end of a period,
+$\beta$ is the subjective discount factor, and $I_t$ is the worker's income
+in period $t$, i.e., $I_t$ is equal to the wage $w_t$ when employed and the 
+income $b$ when unemployed.
+
+\vskip.2cm
+
+\item{a.} Write the Bellman equation for a worker.
+\vskip.1cm
+
+\item{b.} Characterize the agent's decision rule in terms of the model's
+parameters. How is the reservation wage affected by $\mu$.
+ 
+\vskip.2cm 
+\noindent
+The economy is populated with a continuum of workers as described. The exogenous
+rate of new workers entering the labor market is equal to $\mu$, i.e., the same
+as the death rate. New entrants are unemployed and must draw a new wage.
+
+\vskip.2cm
+
+\item{c.} Find an expression for the economy's unemployment rate in terms
+of exogenous parameters and the endogenous reservation wage $\bar w$. Discuss the
+determinants of the unemployment rate.
+
+\vskip.2cm 
+\noindent
+We now change the technology so that 
+the economy fluctuates between booms ($B$) and recessions ($R$).
+In a boom, all employed workers are paid an extra $z>0$.
+That is, the income of a worker with wage $w$ is $I_t=w+z$ in a boom, and
+$I_t=w$ in a recession. 
+The state of the economy is i.i.d.\ and both outcomes have the same probability
+$0.5$ of occurring. 
+
+\vskip.2cm
+\item{d. } Write the Bellman equation for a worker. (Hint: A worker's state
+vector has now two arguments.)
+
+\vskip.1cm
+\item{e. } Characterize the worker's reservation wage policy. How does the
+reservation wages in booms and recessions compare to each other? 
+(Hint: An already employed worker
+might want to draw a new wage when the state of the economy changes.)
+
+
+\vskip.1cm
+\item{f. } Interpret the simulated time series of the model in the figure.
+$$
+\grafone{pic1.ps,height=2.1in}{}
+$$
+
+
+
+
+\end
+

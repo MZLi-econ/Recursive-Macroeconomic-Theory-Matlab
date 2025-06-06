@@ -1,0 +1,57 @@
+This is emTeX (tex386), Version 3.14159 [4b] (preloaded format=plain 97.6.2)  12 SEP 1999 08:22
+**q2
+(q2.tex (c:/emtex/texinput/etc/sargent.tex (c:/emtex/texinput/etc/fonts.tex
+\bitfam=\fam8
+\scfam=\fam9
+\mibfam=\fam10
+\bsyfam=\fam11
+\scrfam=\fam12
+\ttglue=\skip18
+)
+\yesdouble=\count26
+\savebase=\skip19
+\notenumber=\count27
+\notebox=\box16
+)
+(c:/emtex/texinput/etc/grafinp3.tex (c:/emtex/texinput/etc/psfig2.tex
+\@unused=\write0
+
+psfig/tex 1.8
+\fboxrule=\dimen16
+\fboxsep=\dimen17
+\ps@tempdima=\dimen18
+\ps@tempboxa=\box17
+\ps@stream=\read0
+\p@intvaluex=\dimen19
+\p@intvaluey=\dimen20
+)
+\captionsize=\dimen21
+) (c:/emtex/texinput/etc/psfig.tex)
+psfig: searching pic1.ps for bounding box
+psfig: found `(atend)'; continuing search
+psfig: including pic1.ps 
+
+Overfull \vbox (59.30518pt too high) has occurred while \output is active
+\vbox(536.00175+0.0)x469.75499, glue set - 1.0
+.\glue(\topskip) 3.05556
+.\hbox(6.94444+1.94444)x469.75499, glue set 297.11581fil
+..\hbox(0.0+0.0)x20.0
+..\tenrm M
+..\tenrm o
+..\kern0.27779
+..\tenrm d
+..etc.
+.\glue(\parskip) 0.0 plus 1.0
+.\glue(\baselineskip) 2.55556
+.\hbox(7.5+2.5)x391.46176, glue set 235.23872fil
+..\hbox(0.0+0.0)x20.0
+..\tenbf A
+..\tenbf n
+..\tenbf a
+..\tenbf l
+..etc.
+.etc.
+
+
+[1] )
+Output written on q2.dvi (1 page, 3764 bytes).

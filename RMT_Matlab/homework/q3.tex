@@ -1,0 +1,126 @@
+%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  q3.tex 
+%  Teaching evaluation question 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input sargent
+\magnification=1200   
+\input grafinp3 
+\input psfig 
+
+\line{Stanford University \hfil Fall 1999}
+\line{Economics 210 \hfil Thomas Sargent}
+
+
+
+
+\centerline{\bf Teaching Evaluation: Part I}
+
+
+\medskip
+\noindent Without the required tools,
+which were invented  only after World War II,
+the following question is very difficult to answer.
+Many of you have probably not yet learned those tools. 
+Nevertheless, I ask you to spend some time thinking 
+about the question.
+  The question raises some of the substantive and 
+analytic issues to be discussed in this course.
+Please take an hour to think and write about
+the following question.  Your answer will not be graded.
+Please keep your answer until the end of the quarter, to compare 
+it with the answer that you will give to another question
+you will be asked then.
+
+\vskip.1cm
+\noindent
+{\bf Part 1.} \ \ {\it The worker's problem.}
+\medskip
+
+\noindent Think about an economy in which workers  all confront the following common
+environment. Time is discrete.  Let $t=0, 1, 2, \ldots$ index time. 
+At the beginning of each period, a  previously employed
+worker can choose to work at her last
+period's wage or to draw a new wage. If she draws a new wage, the old wage is
+lost and she can start working at the new wage in the following period.
+New wages are independent and identically
+distributed  (i.i.d.)  draws from the cumulative
+distribution function $F$, where $F(0)=0$, $F(M)=1$
+for $M<\infty$. Each unemployed worker
+can draw one and only one wage per period from $F$.   Someone
+offered a wage is  free
+to work at that  wage for as long as she chooses (she cannot
+be fired). 
+The income of an unemployed worker is $b$, which includes
+unemployment insurance and the value of home production. 
+Each worker seeks to maximize 
+$
+E_0 \sum_{t=0}^{\infty} (1-\mu)^t \beta^t I_t,  
+$
+where $\mu$ is the probability that a worker dies at the end of a period,
+$\beta$ is the subjective discount factor, and $I_t$ is the worker's income
+in period $t$, i.e., $I_t$ is equal to the wage $w_t$ when employed and the 
+income $b$ when unemployed.  Here $E_0$ is the mathematical
+expectation operator, conditioned on information known at time $0$.
+Assume that $\beta \in (0,1)$ and $\mu \in (0,1)$.
+
+\medskip
+\item{a.} Describe the  worker's optimal decision rule.  In particular,
+what should an employed worker do?  What should an unemployed worker do?   
+\vskip.1cm
+
+\item{b.} How would an unemployed  worker's  
+behavior be affected by an increase in $\mu$? 
+\vskip.2cm 
+
+\medskip
+\noindent{\bf Part 2.}\ {\it  Equilibrium unemployment rate}
+\medskip
+\noindent
+The economy is populated with a continuum of the workers just described.
+ There  is an  exogenous
+rate of new workers entering the labor market  equal to $\mu$, which
+equals 
+the death rate. New entrants are unemployed and must draw a new wage.
+
+\vskip.2cm
+
+\item{c.} 
+ Discuss the
+determinants of the unemployment rate.
+
+\vskip.2cm 
+\noindent
+We now change the technology so that 
+the economy fluctuates between booms ($B$) and recessions ($R$).
+In a boom, all employed workers are paid an extra $z>0$.
+That is, the income of a worker with wage $w$ is $I_t=w+z$ in a boom, and
+$I_t=w$ in a recession.  Let whether the economy is
+in a boom or a recession define the {\it state} of the economy.
+Assume that  
+the state of the economy is i.i.d.\ and that booms and
+recessions have the same probabilities of
+$0.5$. 
+
+\vskip.2cm
+\item{d. }  Describe the optimal behavior of employed and unemployed
+ workers.  When, if ever, might workers choose to quit? 
+
+\vskip.2cm
+\item{e. } Discuss the determination of the unemployment rate. 
+
+\vskip.1cm
+\item{f. } The following time series is a simulation from
+the solution of the model with booms   and recessions.  Interpret
+the time series in terms of the model.
+
+$$
+\grafone{pic1.ps,height=2.1in}{\bf Unemployment rate }
+$$
+
+
+
+
+\end
+
